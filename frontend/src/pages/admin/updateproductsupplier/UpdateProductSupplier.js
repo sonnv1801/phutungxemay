@@ -29,7 +29,7 @@ const UpdateProductSupplier = () => {
   console.log(data, "data");
   console.log(loading, "loading");
   useEffect(() => {
-    fetch(`https://phutungxemay.onrender.com/v1/productsupplier/${path}`)
+    fetch(`http://localhost:8000/v1/productsupplier/${path}`)
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
